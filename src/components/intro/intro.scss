@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: rgb(228, 229, 230);
+  background-color: rgba(215, 215, 219, 0.897);
   display: flex;
 
   @include mobile{
@@ -14,17 +14,17 @@
     overflow: hidden;
 
     .imgContainer {
-      margin-top : 100px;
-      margin-right: 170px;
+      margin-top : 150px;
+      margin-right: 130px;
       width: 500px;
       height: 500px;
-      border:2px solid gray;
+      // border:2px solid rgba(18, 9, 22, 0.247);
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
-
+      // transform: skewY(20deg);
       @include mobile{
         align-items: flex-start;
       }
@@ -76,10 +76,11 @@
         span {
           font-size: inherit;
           color: crimson;
+         
         }
 
         .ityped-cursor {
-          animation: blink 1s infinite;
+          animation: blink 1s infinite; 
         }
 
         @keyframes blink {
@@ -90,6 +91,7 @@
                 opacity: 0;
             }
         }
+
       }
     }
     a {
