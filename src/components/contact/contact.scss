@@ -39,10 +39,10 @@
         width: 300px;
         height: 30px;
         font-size: 14px;
-
         @include mobile {
           width: 200px;
           height: 20px;
+          margin-bottom: 20px;
         }
       }
 
@@ -69,6 +69,9 @@
 
         &:focus {
           outline: none;
+        }
+        @include mobile {
+          margin-top:20px;
         }
       }
 
